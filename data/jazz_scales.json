@@ -1,27 +1,27 @@
 [
   {
-    "Scale Name": "Ionian (Major)",
-    "Compatible Chords": "Maj7, Maj6",
-    "Common Usages": "Basic major key harmony, I chord in II-V-I"
+	"Scale Name": "Ionian (Major)",
+	"Compatible Chords": "Maj7, Maj6",
+	"Common Usages": "Basic major key harmony, I chord in II-V-I"
   },
   {
-    "Scale Name": "Lydian",
-    "Compatible Chords": "Maj7 (non-functional), Maj#11",
-    "Common Usages": "Modal jazz (e.g. 'Maiden Voyage'), bright tonic sound"
+	"Scale Name": "Lydian",
+	"Compatible Chords": "Maj7 (non-functional), Maj#11",
+	"Common Usages": "Modal jazz (e.g. 'Maiden Voyage'), bright tonic sound"
   },
   {
-    "Scale Name": "Mixolydian",
-    "Compatible Chords": "Dom7, 7sus4",
-    "Common Usages": "V chord in major keys, blues, dominant pedal"
+	"Scale Name": "Mixolydian",
+	"Compatible Chords": "Dom7, 7sus4",
+	"Common Usages": "V chord in major keys, blues, dominant pedal"
   },
   {
-    "Scale Name": "Dorian",
-    "Compatible Chords": "Min7, Min9, 7sus4",
-    "Common Usages": "ii chord in minor or modal jazz"
+	"Scale Name": "Dorian",
+	"Compatible Chords": "Min7, Min9, 7sus4",
+	"Common Usages": "ii chord in minor or modal jazz"
   },
   {
-    "Scale Name": "Aeolian (Natural Minor)",
-    "Compatible Chords": "Min7, Min6 (less common in jazz)",
-    "Common Usages": "vi chord in major keys"
+	"Scale Name": "Aeolian (Natural Minor)",
+	"Compatible Chords": "Min7, Min6 (less common in jazz)",
+	"Common Usages": "vi chord in major keys"
   }
 ]

@@ -1,2 +1,5 @@
 res://Main.tscn
 res://Main.gd
+res://PracticeHistory.tscn
+res://PracticeHistory.gd
+res://data/jazz_scales.json

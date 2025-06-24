@@ -46,3 +46,13 @@ text = "Chords:"
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Usage:"
+
+[node name="Button_LogPractice" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "I practiced this"
+
+[node name="Button_ViewHistory" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "View History"
