@@ -22,7 +22,7 @@ theme_override_constants/separation = 18
 
 [node name="Label_Title" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 29
+theme_override_font_sizes/font_size = 40
 text = "Jazz Scale Picker"
 horizontal_alignment = 1
 
@@ -33,9 +33,16 @@ text = "Pick Scale"
 
 [node name="Label_ScaleName" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 26
+text = "🎵Scale:	"
 
 [node name="Label_Chords" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+text = "Chords:"
 
 [node name="Label_Usage" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+text = "Usage:"

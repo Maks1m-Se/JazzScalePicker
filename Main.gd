@@ -1,5 +1,7 @@
 extends Control
 
+const PRACTICE_LOG_PATH = "user://practice_log.json"
+
 var scale_data: Array = []
 var rng := RandomNumberGenerator.new()
 
@@ -32,6 +34,28 @@ func _on_Button_pressed():
 	var index = rng.randi_range(0, scale_data.size() - 1)
 	var scale = scale_data[index]
 
-	label_scale_name.text = "🎵 " + scale["Scale Name"]
-	label_chords.text = "Chords: " + scale["Compatible Chords"]
-	label_usage.text = "Usage: " + scale["Common Usages"]
+	label_scale_name.text = "🎵Scale:   " + scale["Scale Name"]
+	label_chords.text = "Chords:   " + scale["Compatible Chords"]
+	label_usage.text = "Usage:   " + scale["Common Usages"]
+	
+	log_practice(scale["Scale Name"])
+	
+	
+func log_practice(scale_name: String) -> void:
+	var log_entry = {
+		"Scale Name": scale_name,
+		"Timestamp": Time.get_datetime_string_from_system()
+	}
+
+	var log_data: Array = []
+	if FileAccess.file_exists(PRACTICE_LOG_PATH):
+		var file = FileAccess.open(PRACTICE_LOG_PATH, FileAccess.READ)
+		var text = file.get_as_text()
+		var parsed = JSON.parse_string(text)
+		if parsed is Array:
+			log_data = parsed
+
+	log_data.append(log_entry)
+
+	var file = FileAccess.open(PRACTICE_LOG_PATH, FileAccess.WRITE)
+	file.store_string(JSON.stringify(log_data, "\t"))  # Pretty-print
